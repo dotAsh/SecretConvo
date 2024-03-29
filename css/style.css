@@ -1,0 +1,419 @@
+/* ===============common css starts 
+======================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+span {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  font-family: "Merriweather", serif;
+  height: 100vh !important;
+
+}
+
+/* ===============common css ends 
+======================= */
+
+.box {
+  display: flex;
+  flex-direction: row;
+  height: 100% !important;
+}
+
+.leftbar {
+  padding-top: 20px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  height: 100vh;
+
+  text-align: center;
+  width: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #e4dede;
+}
+
+.leftbar .icons {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.rightPart {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100% !important;
+}
+
+.chatHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e4e0e0;
+}
+
+.chatHead div {
+  width: 20%;
+
+}
+
+.chatBox {
+  display: flex;
+
+  flex-direction: row;
+  height: 90%;
+}
+
+.chatOptions {
+  display: flex;
+  background: rgb(247, 244, 244);
+  width: 20%;
+  flex-direction: column;
+
+}
+
+.chatBody {
+  height: 100%;
+  width: 77%;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.chat-messages {
+
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+
+
+
+  height: 100% !important;
+
+  overflow-y: auto;
+}
+
+
+.sent {
+  background-color: rgb(231, 227, 227);
+
+  text-align: right;
+  align-self: flex-end;
+  margin-top: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.received {
+  background-color: rgb(235, 226, 226);
+  align-self: flex-start;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: right;
+}
+
+.message-input {
+  width: calc(100% - 10%);
+  padding: 10px;
+  border: 1px solid #ddd7d7;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  border-radius: 10px;
+
+}
+
+.send-btn {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(133, 36, 133);
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+.tick-mark {
+
+  font-size: 20px;
+  border-radius: 50%;
+  width: 100%;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.input-container {
+  display: flex;
+}
+
+.message-input {
+  margin: 10px;
+  flex: 1;
+}
+
+.send-btn {
+  margin: 10px;
+}
+
+@keyframes typing {
+  0% {
+    content: '.';
+  }
+
+  25% {
+    content: '..';
+  }
+
+  50% {
+    content: '...';
+  }
+
+  75% {
+    content: '';
+  }
+
+  100% {
+    content: '';
+  }
+}
+
+.typing-animation::after {
+  content: '.';
+  animation: typing 1s infinite;
+}
+
+.profile-pic {
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.SenderProfilePic img {
+  padding-left: 5px;
+}
+
+.ReceiverProfilePic img {
+  padding-right: 5px;
+}
+
+.profile-pic span {
+  color: rgb(59, 15, 59);
+  font-weight: 700;
+}
+
+.SenderProfilePic {
+  padding-left: 100px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.ReceiverProfilePic {
+  padding-right: 100px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-pic-img {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.SenderMsgContent {
+  align-items: flex-start;
+
+}
+
+.ReceiverMsgContent {
+  align-items: flex-end;
+
+}
+
+.sender-name {
+
+
+  margin-bottom: 5px;
+
+}
+
+
+.message-input {
+  padding-left: 40px;
+  background: url(../link.png) no-repeat;
+  background-size: 20px;
+  background-position: 10px center;
+}
+
+
+::placeholder {
+  font-family: "Merriweather", serif;
+
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.chatBody button {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: black;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: azure;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.chatBody button svg {
+  padding-left: 4px;
+  height: 20px;
+  width: 20px;
+  fill: azure;
+}
+
+.leftbar .icons {
+  padding-top: 20px;
+}
+
+.leftbar .icons svg {
+  height: 25px;
+  width: 25px;
+  padding-top: 20px;
+}
+
+
+.leftbar .logout svg {
+
+  height: 25px;
+  width: 25px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.leftbar div:last-child {
+  margin-top: auto;
+
+}
+
+.chatOptions div {
+  border: 1px solid #dad4d4;
+  padding: 15px;
+}
+
+.chatOptions svg {
+  height: 28px;
+  width: 28px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.userInfo svg {
+  height: 11px;
+  width: 11px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.userInfo span {
+  display: inline-block;
+  padding-left: 10px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(70, 20, 70);
+
+}
+
+.chatOptions div:first-child {
+  background: rgb(236, 217, 222);
+  ;
+}
+
+.chatOptions div:first-child span {
+  color: rgb(109, 21, 109);
+  /* Change the color to your desired color */
+  font-weight: 700;
+
+}
+
+.chatHead h3 {
+  color: rgb(65, 8, 65);
+  padding-left: 20px;
+}

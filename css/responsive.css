@@ -1,0 +1,81 @@
+@media (min-width: 1200px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .leftbar svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .leftbar .icons svg {
+        height: 17px;
+        width: 17px;
+    }
+
+    .leftbar .logout svg {
+        height: 17px;
+        width: 17px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .chatOptions {
+        display: none;
+    }
+
+    .userInfo {
+        display: none;
+    }
+
+    .leftbar svg {
+        height: 17px;
+        width: 17px;
+    }
+
+    .leftbar .icons svg {
+        height: 17px;
+        width: 17px;
+    }
+
+    .chatHead h3 {
+
+        font-size: 14px;
+    }
+
+    .leftbar .logout svg {
+        height: 17px;
+        width: 17px;
+    }
+
+    ::placeholder {
+
+        font-size: 10px;
+        font-weight: 300;
+
+    }
+
+    .chatBody button {
+
+        font-size: 14px;
+
+
+    }
+
+    .chatBody button svg {
+        padding-left: 2px;
+        height: 15px;
+        width: 15px;
+
+    }
+    .chatBody {
+        
+        width: 90%;
+        
+    }
+
+}
